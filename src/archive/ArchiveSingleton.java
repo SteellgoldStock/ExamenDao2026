@@ -1,3 +1,5 @@
+package archive;
+
 public class ArchiveSingleton {
     private static ArchiveSingleton instance;
     private Archive archive;

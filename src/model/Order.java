@@ -1,3 +1,6 @@
+package model;
+
+import observer.IObserver;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,8 +65,8 @@ public class Order {
 
     @Override
     public String toString() {
-				return "Commande de " + dishes.size() + " plat - " +
-						"Total: " + getTotalPrice() + "€ - " +
-						"Statut: " + (status ? "Validé" : conclusion);
+        return "Commande de " + dishes.size() + " plat - " +
+                "Total: " + getTotalPrice() + "€ - " +
+                "Statut: " + (status ? "Validé" : conclusion);
     }
 }

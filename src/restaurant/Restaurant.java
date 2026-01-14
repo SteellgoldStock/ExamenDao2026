@@ -1,3 +1,8 @@
+package restaurant;
+
+import model.Dish;
+import model.Order;
+import model.Customer;
 import java.util.ArrayList;
 import java.util.List;
 

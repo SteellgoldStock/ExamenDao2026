@@ -1,3 +1,6 @@
+package model;
+
+import observer.IObserver;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +36,7 @@ public class Customer implements IObserver {
     @Override
     public void update(String message) {
         this.myOrder = message;
-        System.out.println("Notif de" + name + ": " + message);
+        System.out.println("Notif de " + name + ": " + message);
     }
 
     // Builder patern pour créer des clients
