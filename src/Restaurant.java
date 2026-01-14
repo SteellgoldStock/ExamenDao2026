@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-    private List<Plat> platList = new ArrayList<>();
+    private List<Dish> dishList = new ArrayList<>();
 
-    public void addPlat(Plat item) {}
+    public void addDish(Dish item) {}
 
-    public void traiterCommande(Commande commande, Client client) {
+    public void processOrder(Order order, Customer customer) {
         // Envoyer la commande dans le pattern chain of responsability
 
         // Si la commande est faisable, mettre à jour le statut de la commande

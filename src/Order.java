@@ -1,4 +1,4 @@
-public class Commande {
+public class Order {
     // Pas de texte -> La commande est faisable
     // Du texte -> La commande est non faisable pour x raison
     private String conclusion = "";
