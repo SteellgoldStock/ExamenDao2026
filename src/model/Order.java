@@ -43,6 +43,10 @@ public class Order {
         dishes.add(dish);
     }
 
+		public void addDishes(List<Dish> items) {
+				dishes.addAll(items);
+		}
+
     public void addObserver(IObserver observer) {
         observers.add(observer);
     }
