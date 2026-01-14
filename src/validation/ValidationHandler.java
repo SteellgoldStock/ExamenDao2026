@@ -4,11 +4,11 @@ import model.Order;
 import model.Customer;
 
 public abstract class ValidationHandler {
-    protected ValidationHandler nextHandler;
+		protected ValidationHandler nextHandler;
 
-    public void setNext(ValidationHandler handler) {
-        this.nextHandler = handler;
-    }
+		public void setNext(ValidationHandler handler) {
+				this.nextHandler = handler;
+		}
 
-    public abstract boolean validate(Order order, Customer customer);
+		public abstract boolean validate(Order order, Customer customer);
 }
