@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Customer {
+public class Customer implements IObserver {
     private String name;
     private double availableMoney;
     private List<EAllergen> allergies = new ArrayList<>();
@@ -28,6 +28,12 @@ public class Customer {
 
     public void setMyOrder(String myOrder) {
         this.myOrder = myOrder;
+    }
+
+    @Override
+    public void update(String message) {
+        this.myOrder = message;
+        System.out.println("Notif de" + name + ": " + message);
     }
 
     // Builder patern pour créer des clients
